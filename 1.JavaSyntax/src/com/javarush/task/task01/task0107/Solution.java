@@ -9,7 +9,7 @@ public class Solution {
         int x = 2;
         int y = 12;
 
-        // y = x * y;
+//         y = x * y;
          y = x + y;
 
         x = y - x;
