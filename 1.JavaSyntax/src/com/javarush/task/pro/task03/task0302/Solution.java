@@ -14,7 +14,6 @@ public class Solution {
         int age = scanner.nextInt();
         if (18 <= age && age <= 28) {
             System.out.println(name + militaryCommissar);
-        } else {
         }
     }
 }
