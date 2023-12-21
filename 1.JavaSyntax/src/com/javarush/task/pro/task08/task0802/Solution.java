@@ -1,6 +1,6 @@
 package com.javarush.task.pro.task08.task0802;
 
-/*
+/* 
 Утильный класс: часть 2
 */
 
