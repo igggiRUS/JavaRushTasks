@@ -18,11 +18,7 @@ public class Solution {
     }
 
     public static void createNewPlanet(String planetName) {
-        for (int i = 0; i < planets.size(); i++) {
-            if ("Земля" == planets.get(i)) {
-                planets.add(i+1, planetName);
-            }
-        }
+        planets.add(planets.indexOf("Земля") + 1, planetName);
     }
 
     public static void addPlanets() {
