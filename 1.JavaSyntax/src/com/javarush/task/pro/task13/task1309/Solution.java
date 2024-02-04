@@ -16,10 +16,10 @@ public class Solution {
 
 
     public static void addStudents() {
-        grades.put("Коля", 12.4);
-        grades.put("Вася", 16.3);
-        grades.put("Петя", 18.2);
-        grades.put("Леша", 20.1);
-        grades.put("Андрюша", 22.0);
+        grades.put("Коля", 12.4d);
+        grades.put("Вася", 16.3d);
+        grades.put("Петя", 18.2d);
+        grades.put("Леша", 20.1d);
+        grades.put("Андрюша", 22.0d);
     }
 }
