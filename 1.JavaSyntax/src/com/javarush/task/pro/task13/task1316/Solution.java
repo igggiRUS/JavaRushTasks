@@ -6,9 +6,6 @@ import java.util.Arrays;
 public class Solution {
 
     public static void main(String[] args) {
-        JavarushQuest[] quests = JavarushQuest.values();
-
-
         for (JavarushQuest quest :
                 JavarushQuest.values()) {
             System.out.println(quest.ordinal());
