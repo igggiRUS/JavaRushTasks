@@ -16,13 +16,11 @@ public class MyStack {
     }
 
     public String pop() {
-        String result = storage.get(0);
-        storage.remove(0);
-        return result;
+        return storage.remove(0);
     }
 
     public String peek() {
-        return storage.get(1);
+        return storage.get(0);
     }
 
     public boolean empty() {
@@ -30,11 +28,6 @@ public class MyStack {
     }
 
     public int search(String s) {
-        for (int i = 0; i < storage.size(); i++) {
-            if (storage.get(i).equals(s)) {
-                return i;
-            }
-        }
-        return -1;
+        return storage.indexOf(s);
     }
 }
