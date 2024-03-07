@@ -46,7 +46,7 @@ public class Solution {
                 } catch (Exception e) {
                     System.out.println(NOT_EXIST);
                 }
-            }catch (NumberFormatException e) {
+            }catch (Exception e) {
                 System.out.println(INTEGER_REQUIRED);
             }
 
