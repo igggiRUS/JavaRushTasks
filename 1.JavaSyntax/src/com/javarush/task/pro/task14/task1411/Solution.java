@@ -15,8 +15,15 @@ public class Solution {
     public static FileManager fileManager = new FileManager();
 
     public static void main(String[] args) {
-        fileManager.copyFile("book.txt", "book_final_copy.txt");
-        fileManager.copyFile("book_final_copy.txt", "book_last_copy.txt");
-        //напишите тут ваш код
+        try {
+            fileManager.copyFile("book.txt", "book_final_copy.txt");
+            fileManager.copyFile("book_final_copy.txt", "book_last_copy.txt");
+        } catch (RuntimeException e) {
+            if (e.getCause() instanceof FileNotFoundException) {
+                System.out.println(FAILED_TO_READ);
+            } else if (e.getCause() instanceof FileSystemException) {
+                System.out.println(FAILED_TO_WRITE);
+            }
+        }
     }
 }
